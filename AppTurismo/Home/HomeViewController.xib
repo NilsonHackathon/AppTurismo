@@ -172,13 +172,6 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40O-7t-kfF" userLabel="ViewInfo3">
                                             <rect key="frame" x="0.0" y="472" width="414" height="141"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaseoPieCaballo" translatesAutoresizingMaskIntoConstraints="NO" id="Rcy-1E-RMP" userLabel="Granada-ViajeOmetepe">
-                                                    <rect key="frame" x="8" y="5" width="128" height="128"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="128" id="CJ2-fd-yBb"/>
-                                                        <constraint firstAttribute="width" constant="128" id="Vei-ob-DPF"/>
-                                                    </constraints>
-                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour a pie y a caballos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eh5-fV-EM2">
                                                     <rect key="frame" x="236" y="8" width="105" height="47"/>
                                                     <constraints>
@@ -200,29 +193,38 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaseoPieCaballo" translatesAutoresizingMaskIntoConstraints="NO" id="Rcy-1E-RMP" userLabel="Granada-ViajeOmetepe">
+                                                    <rect key="frame" x="8" y="5" width="128" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="TDF-n7-D2D"/>
+                                                        <constraint firstAttribute="width" constant="128" id="w5U-m2-v4L"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="Eh5-fV-EM2" firstAttribute="top" secondItem="40O-7t-kfF" secondAttribute="top" constant="8" id="8ne-Ef-keM"/>
                                                 <constraint firstAttribute="trailing" secondItem="Eh5-fV-EM2" secondAttribute="trailing" constant="73" id="KIi-C5-jvm"/>
                                                 <constraint firstAttribute="trailing" secondItem="f7E-Dg-L5f" secondAttribute="trailing" constant="10" id="LuE-rQ-8Hg"/>
-                                                <constraint firstItem="Rcy-1E-RMP" firstAttribute="leading" secondItem="40O-7t-kfF" secondAttribute="leading" constant="8" id="Nse-B8-lZr"/>
+                                                <constraint firstItem="f7E-Dg-L5f" firstAttribute="leading" secondItem="40O-7t-kfF" secondAttribute="leading" constant="173" id="SPK-1c-pMz"/>
+                                                <constraint firstItem="Rcy-1E-RMP" firstAttribute="top" secondItem="40O-7t-kfF" secondAttribute="top" constant="5" id="blz-da-rem"/>
                                                 <constraint firstAttribute="height" constant="141" id="fUE-5u-QKd"/>
                                                 <constraint firstItem="f7E-Dg-L5f" firstAttribute="top" secondItem="40O-7t-kfF" secondAttribute="top" constant="41" id="h0X-QB-WgV"/>
-                                                <constraint firstItem="Rcy-1E-RMP" firstAttribute="top" secondItem="40O-7t-kfF" secondAttribute="top" constant="5" id="nNj-Dw-3xN"/>
+                                                <constraint firstItem="Eh5-fV-EM2" firstAttribute="leading" secondItem="40O-7t-kfF" secondAttribute="leading" constant="236" id="tA7-vQ-A4w"/>
+                                                <constraint firstItem="Rcy-1E-RMP" firstAttribute="leading" secondItem="40O-7t-kfF" secondAttribute="leading" constant="8" id="uLW-2E-Bfh"/>
                                             </constraints>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3u-kY-BKe" userLabel="ViewInfo4">
                                             <rect key="frame" x="0.0" y="681" width="414" height="141"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IglesiaVista" translatesAutoresizingMaskIntoConstraints="NO" id="Dax-6I-FEq" userLabel="Granada-ViajeOmetepe">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IglesiaVista" translatesAutoresizingMaskIntoConstraints="NO" id="Dax-6I-FEq" userLabel="Granada-ViajeOmetepe">
                                                     <rect key="frame" x="8" y="5" width="128" height="128"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="128" id="0Fi-Ss-fxe"/>
                                                         <constraint firstAttribute="width" constant="128" id="ARK-6R-Hke"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combo Paseo a las Isletas + visita de la ciudad de Granada" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ws-IO-nnL">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disfruta de los Mejores Lugares de Interés de Granadas en Carruaje + Guía Local" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ws-IO-nnL">
                                                     <rect key="frame" x="185" y="0.0" width="206" height="52"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="206" id="3MX-Wk-IyQ"/>
@@ -245,11 +247,11 @@
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstItem="DGa-ue-ZCH" firstAttribute="leading" secondItem="Dax-6I-FEq" secondAttribute="trailing" constant="42" id="Mhw-1m-E7e"/>
                                                 <constraint firstItem="DGa-ue-ZCH" firstAttribute="leading" secondItem="Dax-6I-FEq" secondAttribute="trailing" constant="42" id="QiE-uG-f6s"/>
                                                 <constraint firstAttribute="trailing" secondItem="0Ws-IO-nnL" secondAttribute="trailing" constant="23" id="SOh-2P-p51"/>
                                                 <constraint firstItem="DGa-ue-ZCH" firstAttribute="top" secondItem="D3u-kY-BKe" secondAttribute="top" constant="42" id="UHi-OM-18l"/>
                                                 <constraint firstAttribute="height" constant="141" id="UxM-yg-60A"/>
+                                                <constraint firstAttribute="trailing" secondItem="DGa-ue-ZCH" secondAttribute="trailing" constant="15" id="fy6-E5-MHN"/>
                                                 <constraint firstItem="Dax-6I-FEq" firstAttribute="top" secondItem="D3u-kY-BKe" secondAttribute="top" constant="5" id="nyO-Yz-nw7"/>
                                                 <constraint firstItem="0Ws-IO-nnL" firstAttribute="leading" secondItem="Dax-6I-FEq" secondAttribute="trailing" constant="49" id="rjr-GP-hpF"/>
                                                 <constraint firstItem="Dax-6I-FEq" firstAttribute="leading" secondItem="D3u-kY-BKe" secondAttribute="leading" constant="8" id="urQ-aT-798"/>

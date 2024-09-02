@@ -93,11 +93,13 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hb3-Sa-ncV" secondAttribute="trailing" constant="160" id="21V-mB-1aK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Hb3-Sa-ncV" secondAttribute="bottom" constant="668" id="3YA-Za-S3Q"/>
                 <constraint firstItem="Hb3-Sa-ncV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="160" id="4c6-f8-VVI"/>
                 <constraint firstItem="7uh-MQ-GF1" firstAttribute="top" secondItem="Hb3-Sa-ncV" secondAttribute="bottom" constant="13" id="5be-MA-uBZ"/>
                 <constraint firstItem="ZuW-4Q-IJh" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="AhO-I8-xXY"/>
                 <constraint firstItem="Hb3-Sa-ncV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="121" id="Bfb-mR-j5S"/>
                 <constraint firstItem="ZuW-4Q-IJh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="-48" id="C4h-zE-xsq"/>
+                <constraint firstItem="ZuW-4Q-IJh" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="34" id="FAV-03-PL4"/>
                 <constraint firstItem="7uh-MQ-GF1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="PtZ-Ia-kaq"/>
                 <constraint firstItem="FIY-0M-tHK" firstAttribute="top" secondItem="QXt-Nv-8LN" secondAttribute="bottom" constant="44" id="RRN-Bt-Rqw"/>
                 <constraint firstItem="QXt-Nv-8LN" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="q5E-hV-Jil"/>
