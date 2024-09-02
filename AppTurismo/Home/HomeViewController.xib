@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="AppTurismo" customModuleProvider="target">
+            <connections>
+                <outlet property="InfoView2" destination="xNC-Sd-e21" id="CsK-Si-aHD"/>
+                <outlet property="InfoView3" destination="40O-7t-kfF" id="oqw-U2-PhC"/>
+                <outlet property="InfoView4" destination="D3u-kY-BKe" id="iYa-2j-lMP"/>
+                <outlet property="ViewInfo1" destination="M3O-4E-8I3" id="cWr-y4-Biz"/>
+                <outlet property="ViewLogoFondo" destination="i5P-01-wxp" id="N4a-nG-g0m"/>
+                <outlet property="buttonCerrarSesion" destination="Llv-Jf-ojM" id="pCe-Ic-QkJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5P-01-wxp" userLabel="ViewLogo">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NicTurits" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4IO-uG-HdF">
+                            <rect key="frame" x="260" y="44.5" width="133" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="39" id="dce-IF-zge"/>
+                                <constraint firstAttribute="width" constant="133" id="vei-bc-ziU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                            <color key="textColor" systemColor="systemBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Llv-Jf-ojM">
+                            <rect key="frame" x="273" y="85" width="129" height="31"/>
+                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="31" id="kxX-Ld-IL5"/>
+                                <constraint firstAttribute="width" constant="129" id="xgi-tw-WWD"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Cerrar Sesión"/>
+                            <connections>
+                                <action selector="ActionButtonCerrarSesion:" destination="-1" eventType="touchUpInside" id="c5j-kY-ZT7"/>
+                            </connections>
+                        </button>
+                        <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoApp-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="sMF-Xh-Afq">
+                            <rect key="frame" x="8" y="20" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="Bo9-dd-9NI"/>
+                                <constraint firstAttribute="height" constant="100" id="OJV-8x-yad"/>
+                            </constraints>
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" scale="default" weight="light"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemTealColor"/>
+                    <constraints>
+                        <constraint firstItem="4IO-uG-HdF" firstAttribute="centerY" secondItem="i5P-01-wxp" secondAttribute="centerY" id="0Q7-ab-yZM"/>
+                        <constraint firstItem="sMF-Xh-Afq" firstAttribute="leading" secondItem="i5P-01-wxp" secondAttribute="leading" constant="8" id="Ec1-iB-Mh9"/>
+                        <constraint firstAttribute="trailing" secondItem="Llv-Jf-ojM" secondAttribute="trailing" constant="12" id="aue-s9-aob"/>
+                        <constraint firstAttribute="trailing" secondItem="4IO-uG-HdF" secondAttribute="trailing" constant="21" id="bbs-dQ-tqJ"/>
+                        <constraint firstAttribute="height" constant="128" id="d1S-KB-Mr3"/>
+                        <constraint firstItem="sMF-Xh-Afq" firstAttribute="centerY" secondItem="i5P-01-wxp" secondAttribute="centerY" constant="6" id="kFI-GD-CvG"/>
+                        <constraint firstItem="Llv-Jf-ojM" firstAttribute="top" secondItem="4IO-uG-HdF" secondAttribute="bottom" constant="1.5" id="qBR-PD-npv"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u8S-5p-xCw">
+                    <rect key="frame" x="0.0" y="115" width="414" height="747"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hBh-6n-33d">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="850"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z9o-lE-f4c" userLabel="ViewInternalScroll">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="850"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3O-4E-8I3" userLabel="ViewInfo1">
+                                            <rect key="frame" x="0.0" y="60" width="414" height="141"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GranadaViajeOmeteñe" translatesAutoresizingMaskIntoConstraints="NO" id="qdG-21-uN9" userLabel="Granada-ViajeOmetepe">
+                                                    <rect key="frame" x="8" y="5" width="128" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="128" id="SwL-hq-4e0"/>
+                                                        <constraint firstAttribute="height" constant="128" id="q1t-To-t4B"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viaja desde Granada a la isla de Ometepe y disfruta de un día de turismo y relax." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWU-l8-Z8b">
+                                                    <rect key="frame" x="191" y="59" width="195" height="55"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="195" id="Lie-UW-Nvj"/>
+                                                        <constraint firstAttribute="height" constant="55" id="izC-zG-POT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desde Granada hasta isla de Ometepe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8go-Zg-fdH">
+                                                    <rect key="frame" x="183" y="5" width="207" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="207" id="LD4-Hm-8Dw"/>
+                                                        <constraint firstAttribute="height" constant="44" id="Y8k-RU-YdU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="qdG-21-uN9" firstAttribute="leading" secondItem="M3O-4E-8I3" secondAttribute="leading" constant="8" id="0jj-pI-b3S"/>
+                                                <constraint firstItem="rWU-l8-Z8b" firstAttribute="leading" secondItem="qdG-21-uN9" secondAttribute="trailing" constant="55" id="E4p-X1-sKk"/>
+                                                <constraint firstAttribute="bottom" secondItem="rWU-l8-Z8b" secondAttribute="bottom" constant="27" id="G0P-mi-cq9"/>
+                                                <constraint firstItem="8go-Zg-fdH" firstAttribute="top" secondItem="M3O-4E-8I3" secondAttribute="top" constant="5" id="HEC-7D-U8y"/>
+                                                <constraint firstItem="8go-Zg-fdH" firstAttribute="leading" secondItem="qdG-21-uN9" secondAttribute="trailing" constant="47" id="NTQ-ju-YGH"/>
+                                                <constraint firstAttribute="height" constant="141" id="Whi-u3-7jw"/>
+                                                <constraint firstAttribute="trailing" secondItem="8go-Zg-fdH" secondAttribute="trailing" constant="24" id="e0V-8w-tTc"/>
+                                                <constraint firstItem="qdG-21-uN9" firstAttribute="top" secondItem="M3O-4E-8I3" secondAttribute="top" constant="5" id="idc-j7-Tqv"/>
+                                                <constraint firstAttribute="trailing" secondItem="rWU-l8-Z8b" secondAttribute="trailing" constant="28" id="mM4-46-tPE"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xNC-Sd-e21" userLabel="ViewInfo2">
+                                            <rect key="frame" x="0.0" y="263" width="414" height="141"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Granada_Isletas" translatesAutoresizingMaskIntoConstraints="NO" id="GKC-XX-a1T" userLabel="Granada-ViajeOmetepe">
+                                                    <rect key="frame" x="8" y="5" width="128" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="beW-a8-JYL"/>
+                                                        <constraint firstAttribute="width" constant="128" id="kIh-zq-v9P"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Las isletas: Excursión en barco" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ei-8g-s8Q">
+                                                    <rect key="frame" x="198" y="5" width="181" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="181" id="9pI-xb-Wsr"/>
+                                                        <constraint firstAttribute="height" constant="40" id="dKp-EN-7Qh"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b72-tv-WGM">
+                                                    <rect key="frame" x="170" y="53" width="236" height="69"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="236" id="Fbc-OO-biS"/>
+                                                        <constraint firstAttribute="height" constant="69" id="L0q-yH-FI4"/>
+                                                    </constraints>
+                                                    <string key="text">Explora el Lago de Nicaragua y toda su belleza, sus increíbles vistas, su gran avifauna y aprende sobre la colonización española.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="GKC-XX-a1T" firstAttribute="leading" secondItem="xNC-Sd-e21" secondAttribute="leading" constant="8" id="2Bc-We-Rp5"/>
+                                                <constraint firstAttribute="trailing" secondItem="9ei-8g-s8Q" secondAttribute="trailing" constant="35" id="4dG-Lm-bzq"/>
+                                                <constraint firstItem="b72-tv-WGM" firstAttribute="top" secondItem="9ei-8g-s8Q" secondAttribute="bottom" constant="8" symbolic="YES" id="8se-wa-vXv"/>
+                                                <constraint firstItem="GKC-XX-a1T" firstAttribute="top" secondItem="xNC-Sd-e21" secondAttribute="top" constant="5" id="W3r-FY-8WQ"/>
+                                                <constraint firstItem="b72-tv-WGM" firstAttribute="leading" secondItem="GKC-XX-a1T" secondAttribute="trailing" constant="34" id="ZAF-zw-OHr"/>
+                                                <constraint firstAttribute="trailing" secondItem="b72-tv-WGM" secondAttribute="trailing" constant="8" id="aW6-vj-cHA"/>
+                                                <constraint firstItem="9ei-8g-s8Q" firstAttribute="top" secondItem="xNC-Sd-e21" secondAttribute="top" constant="5" id="jGD-kq-9Ox"/>
+                                                <constraint firstItem="9ei-8g-s8Q" firstAttribute="leading" secondItem="GKC-XX-a1T" secondAttribute="trailing" constant="62" id="rkZ-DH-SYV"/>
+                                                <constraint firstAttribute="height" constant="141" id="zX6-Db-1fr"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40O-7t-kfF" userLabel="ViewInfo3">
+                                            <rect key="frame" x="0.0" y="472" width="414" height="141"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaseoPieyCaballo" translatesAutoresizingMaskIntoConstraints="NO" id="Rcy-1E-RMP" userLabel="Granada-ViajeOmetepe">
+                                                    <rect key="frame" x="8" y="5" width="128" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="CJ2-fd-yBb"/>
+                                                        <constraint firstAttribute="width" constant="128" id="Vei-ob-DPF"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tour a pie y a caballos" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eh5-fV-EM2">
+                                                    <rect key="frame" x="236" y="8" width="105" height="47"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="105" id="HvE-3Z-g89"/>
+                                                        <constraint firstAttribute="height" constant="47" id="UlK-i0-hb7"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7E-Dg-L5f">
+                                                    <rect key="frame" x="173" y="41" width="231" height="92"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="92" id="bgP-TQ-i1X"/>
+                                                        <constraint firstAttribute="width" constant="231" id="wBX-nI-6Lb"/>
+                                                    </constraints>
+                                                    <string key="text">Explora la arquitectura de Granada en el Lago de Nicaragua en un tour de 3 h y observa atracciones como el Convento de San Francisco.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="Eh5-fV-EM2" firstAttribute="top" secondItem="40O-7t-kfF" secondAttribute="top" constant="8" id="8ne-Ef-keM"/>
+                                                <constraint firstAttribute="trailing" secondItem="Eh5-fV-EM2" secondAttribute="trailing" constant="73" id="KIi-C5-jvm"/>
+                                                <constraint firstAttribute="trailing" secondItem="f7E-Dg-L5f" secondAttribute="trailing" constant="10" id="LuE-rQ-8Hg"/>
+                                                <constraint firstItem="Rcy-1E-RMP" firstAttribute="leading" secondItem="40O-7t-kfF" secondAttribute="leading" constant="8" id="Nse-B8-lZr"/>
+                                                <constraint firstAttribute="height" constant="141" id="fUE-5u-QKd"/>
+                                                <constraint firstItem="f7E-Dg-L5f" firstAttribute="top" secondItem="40O-7t-kfF" secondAttribute="top" constant="41" id="h0X-QB-WgV"/>
+                                                <constraint firstItem="Rcy-1E-RMP" firstAttribute="top" secondItem="40O-7t-kfF" secondAttribute="top" constant="5" id="nNj-Dw-3xN"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3u-kY-BKe" userLabel="ViewInfo4">
+                                            <rect key="frame" x="0.0" y="681" width="414" height="141"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IglesiaVista" translatesAutoresizingMaskIntoConstraints="NO" id="Dax-6I-FEq" userLabel="Granada-ViajeOmetepe">
+                                                    <rect key="frame" x="8" y="5" width="128" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="0Fi-Ss-fxe"/>
+                                                        <constraint firstAttribute="width" constant="128" id="ARK-6R-Hke"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Combo Paseo a las Isletas + visita de la ciudad de Granada" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ws-IO-nnL">
+                                                    <rect key="frame" x="185" y="0.0" width="206" height="52"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="206" id="3MX-Wk-IyQ"/>
+                                                        <constraint firstAttribute="height" constant="52" id="WI5-Yp-f8T"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Embárcate en un cautivador viaje por Nicaragua, en el que se mezclan el encanto colonial, la aventura y la inmersión cultural." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGa-ue-ZCH">
+                                                    <rect key="frame" x="178" y="42" width="221" height="91"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="91" id="OeG-r4-4RL"/>
+                                                        <constraint firstAttribute="width" constant="221" id="VpH-Zg-Qnc"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="DGa-ue-ZCH" firstAttribute="leading" secondItem="Dax-6I-FEq" secondAttribute="trailing" constant="42" id="Mhw-1m-E7e"/>
+                                                <constraint firstItem="DGa-ue-ZCH" firstAttribute="leading" secondItem="Dax-6I-FEq" secondAttribute="trailing" constant="42" id="QiE-uG-f6s"/>
+                                                <constraint firstAttribute="trailing" secondItem="0Ws-IO-nnL" secondAttribute="trailing" constant="23" id="SOh-2P-p51"/>
+                                                <constraint firstItem="DGa-ue-ZCH" firstAttribute="top" secondItem="D3u-kY-BKe" secondAttribute="top" constant="42" id="UHi-OM-18l"/>
+                                                <constraint firstAttribute="height" constant="141" id="UxM-yg-60A"/>
+                                                <constraint firstItem="Dax-6I-FEq" firstAttribute="top" secondItem="D3u-kY-BKe" secondAttribute="top" constant="5" id="nyO-Yz-nw7"/>
+                                                <constraint firstItem="0Ws-IO-nnL" firstAttribute="leading" secondItem="Dax-6I-FEq" secondAttribute="trailing" constant="49" id="rjr-GP-hpF"/>
+                                                <constraint firstItem="Dax-6I-FEq" firstAttribute="leading" secondItem="D3u-kY-BKe" secondAttribute="leading" constant="8" id="urQ-aT-798"/>
+                                                <constraint firstItem="0Ws-IO-nnL" firstAttribute="top" secondItem="D3u-kY-BKe" secondAttribute="top" id="xZE-JF-5E2"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Departamento de Granada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfM-BL-E7z">
+                                            <rect key="frame" x="71" y="8" width="272" height="27"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="27" id="nHT-os-CgW"/>
+                                                <constraint firstAttribute="width" constant="272" id="pty-wS-5xa"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="qfM-BL-E7z" firstAttribute="centerX" secondItem="Z9o-lE-f4c" secondAttribute="centerX" id="4cJ-Su-Vso"/>
+                                        <constraint firstItem="D3u-kY-BKe" firstAttribute="leading" secondItem="Z9o-lE-f4c" secondAttribute="leading" id="6j2-sO-1ZA"/>
+                                        <constraint firstItem="xNC-Sd-e21" firstAttribute="leading" secondItem="Z9o-lE-f4c" secondAttribute="leading" id="Bmm-fe-3ya"/>
+                                        <constraint firstItem="D3u-kY-BKe" firstAttribute="top" secondItem="40O-7t-kfF" secondAttribute="bottom" constant="68" id="CbF-69-x2l"/>
+                                        <constraint firstAttribute="height" constant="850" id="INV-8P-ScB"/>
+                                        <constraint firstItem="qfM-BL-E7z" firstAttribute="top" secondItem="Z9o-lE-f4c" secondAttribute="top" constant="8" id="ME3-YC-e7r"/>
+                                        <constraint firstItem="xNC-Sd-e21" firstAttribute="top" secondItem="M3O-4E-8I3" secondAttribute="bottom" constant="62" id="W0U-Mv-Nsa"/>
+                                        <constraint firstAttribute="trailing" secondItem="40O-7t-kfF" secondAttribute="trailing" id="Ysh-Fb-igC"/>
+                                        <constraint firstItem="M3O-4E-8I3" firstAttribute="leading" secondItem="Z9o-lE-f4c" secondAttribute="leading" id="dQN-BD-ILK"/>
+                                        <constraint firstItem="40O-7t-kfF" firstAttribute="top" secondItem="xNC-Sd-e21" secondAttribute="bottom" constant="68" id="grR-cd-NsG"/>
+                                        <constraint firstItem="M3O-4E-8I3" firstAttribute="top" secondItem="Z9o-lE-f4c" secondAttribute="top" constant="60" id="obt-MS-7ZZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="D3u-kY-BKe" secondAttribute="trailing" id="oh4-tQ-dHj"/>
+                                        <constraint firstAttribute="trailing" secondItem="xNC-Sd-e21" secondAttribute="trailing" id="oqb-8A-GaS"/>
+                                        <constraint firstItem="40O-7t-kfF" firstAttribute="leading" secondItem="Z9o-lE-f4c" secondAttribute="leading" id="xfc-Vi-FvX"/>
+                                        <constraint firstAttribute="trailing" secondItem="M3O-4E-8I3" secondAttribute="trailing" id="zzB-D0-pOA"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="Z9o-lE-f4c" firstAttribute="leading" secondItem="hBh-6n-33d" secondAttribute="leading" id="DHI-Ml-4q0"/>
+                                <constraint firstItem="Z9o-lE-f4c" firstAttribute="top" secondItem="hBh-6n-33d" secondAttribute="top" id="MAX-Np-7ER"/>
+                                <constraint firstAttribute="trailing" secondItem="Z9o-lE-f4c" secondAttribute="trailing" id="Tgo-5W-gn0"/>
+                                <constraint firstAttribute="bottom" secondItem="Z9o-lE-f4c" secondAttribute="bottom" id="dyF-oI-7QO"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="hBh-6n-33d" firstAttribute="leading" secondItem="ZK2-MT-9k2" secondAttribute="leading" id="8Gg-Uy-i6M"/>
+                        <constraint firstItem="hBh-6n-33d" firstAttribute="width" secondItem="CPT-Pc-YWE" secondAttribute="width" id="SJ1-8g-XPw"/>
+                        <constraint firstItem="hBh-6n-33d" firstAttribute="bottom" secondItem="ZK2-MT-9k2" secondAttribute="bottom" id="cG0-NJ-C1g"/>
+                        <constraint firstItem="hBh-6n-33d" firstAttribute="top" secondItem="ZK2-MT-9k2" secondAttribute="top" id="nVz-gf-suq"/>
+                        <constraint firstItem="hBh-6n-33d" firstAttribute="trailing" secondItem="ZK2-MT-9k2" secondAttribute="trailing" id="u9R-on-Ecu"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="ZK2-MT-9k2"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="CPT-Pc-YWE"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="u8S-5p-xCw" firstAttribute="top" secondItem="i5P-01-wxp" secondAttribute="top" constant="115" id="Cq6-F9-6N9"/>
+                <constraint firstItem="i5P-01-wxp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="GkE-qt-nlI"/>
+                <constraint firstItem="u8S-5p-xCw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MIs-xI-kfI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="u8S-5p-xCw" secondAttribute="bottom" id="NaC-4A-G1o"/>
+                <constraint firstItem="i5P-01-wxp" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="T1x-lE-hvj"/>
+                <constraint firstItem="i5P-01-wxp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="f1t-Em-nmi"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="u8S-5p-xCw" secondAttribute="trailing" id="nBC-6x-WjW"/>
+            </constraints>
+            <point key="canvasLocation" x="182.60869565217394" y="54.910714285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="GranadaViajeOmeteñe" width="960" height="384"/>
+        <image name="Granada_Isletas" width="1185" height="616"/>
+        <image name="IglesiaVista" width="754" height="390"/>
+        <image name="LogoApp-removebg-preview" width="500" height="500"/>
+        <image name="PaseoPieyCaballo" width="1185" height="616"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
