@@ -172,7 +172,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40O-7t-kfF" userLabel="ViewInfo3">
                                             <rect key="frame" x="0.0" y="472" width="414" height="141"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaseoPieyCaballo" translatesAutoresizingMaskIntoConstraints="NO" id="Rcy-1E-RMP" userLabel="Granada-ViajeOmetepe">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaseoPieCaballo" translatesAutoresizingMaskIntoConstraints="NO" id="Rcy-1E-RMP" userLabel="Granada-ViajeOmetepe">
                                                     <rect key="frame" x="8" y="5" width="128" height="128"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="128" id="CJ2-fd-yBb"/>
@@ -325,7 +325,7 @@
         <image name="Granada_Isletas" width="1185" height="616"/>
         <image name="IglesiaVista" width="754" height="390"/>
         <image name="LogoApp-removebg-preview" width="500" height="500"/>
-        <image name="PaseoPieyCaballo" width="1185" height="616"/>
+        <image name="PaseoPieCaballo" width="1185" height="616"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
